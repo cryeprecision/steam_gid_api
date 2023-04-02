@@ -1,0 +1,10 @@
+name: steam_gid_api
+services:
+  server:
+    image: steam_gid_api
+    container_name: steam_gid_api
+    networks:
+      - web
+networks:
+  web:
+    external: true
