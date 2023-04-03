@@ -23,8 +23,8 @@ impl From<GroupData> for WebGroupData {
     fn from(value: GroupData) -> Self {
         WebGroupData {
             name: value.name,
-            id_8: format!("{}", value.id_8.0),
-            id_64: format!("{}", value.id_64.0),
+            id_8: value.id_8.0.to_string(),
+            id_64: value.id_64.0.to_string(),
             url: value.url.0,
         }
     }
